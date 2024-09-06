@@ -1,4 +1,4 @@
-import express, { Request, Response } from "express";
+import express from "express";
 import customerRouter from "./routes/customer";
 import userRouter from "./routes/user";
 import shopRouter from "./routes/shop";
@@ -32,3 +32,5 @@ app.use("/api/v1", unitRouter);
 app.use("/api/v1", brandRouter);
 app.use("/api/v1", categoryRouter);
 app.use("/api/v1", productRouter);
+
+export default app;

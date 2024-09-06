@@ -4,7 +4,7 @@ import {
   getUnitById,
   getUnits,
   updateUnitById,
-} from "@/controllers/units";
+} from "../controllers/units";
 import express from "express";
 
 const unitRouter = express.Router();

@@ -4,7 +4,7 @@ import {
   getBrandById,
   getBrands,
   updateBrandById,
-} from "@/controllers/brands";
+} from "../controllers/brands";
 import express from "express";
 
 const brandRouter = express.Router();

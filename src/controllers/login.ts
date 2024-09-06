@@ -1,7 +1,7 @@
-import { db } from "@/db/db";
+import { db } from "../db/db";
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
-import { generateAccessToken } from "@/utils/generateJWT";
+import { generateAccessToken } from "../utils/generateJWT";
 
 export async function auhtorizeUser(req: Request, res: Response) {
   const { email, username, password } = req.body;

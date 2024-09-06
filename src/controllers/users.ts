@@ -1,4 +1,4 @@
-import { db } from "@/db/db";
+import { db } from "../db/db";
 import { Request, Response } from "express";
 import bcrypt from "bcrypt";
 
