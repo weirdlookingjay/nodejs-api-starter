@@ -28,6 +28,8 @@ export async function createProduct(req: Request, res: Response) {
       brand,
       category,
       supplier,
+      wholesalePrice,
+      shopId,
     } = req.body;
 
     const existingProductBySlug = await db.product.findUnique({
@@ -104,6 +106,8 @@ export async function createProduct(req: Request, res: Response) {
         brand,
         category,
         supplier,
+        wholesalePrice,
+        shopId,
       },
     });
     // Return the Product
@@ -202,6 +206,8 @@ export async function updateProductById(req: Request, res: Response) {
     brand,
     category,
     supplier,
+    wholesalePrice,
+    shopId,
   } = req.body;
   try {
     const existingProduct = await db.product.findUnique({
@@ -303,6 +309,8 @@ export async function updateProductById(req: Request, res: Response) {
         brand,
         category,
         supplier,
+        wholesalePrice,
+        shopId,
       },
     });
 

@@ -8,6 +8,7 @@ import unitRouter from "./routes/unit";
 import brandRouter from "./routes/brand";
 import productRouter from "./routes/product";
 import categoryRouter from "./routes/category";
+import saleRouter from "./routes/sale";
 
 require("dotenv").config();
 const cors = require("cors");
@@ -32,5 +33,6 @@ app.use("/api/v1", unitRouter);
 app.use("/api/v1", brandRouter);
 app.use("/api/v1", categoryRouter);
 app.use("/api/v1", productRouter);
+app.use("/api/v1", saleRouter);
 
 export default app;
